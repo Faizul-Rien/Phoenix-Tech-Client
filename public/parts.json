@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "img":"https://m.media-amazon.com/images/I/61Iv-HkR4xL._AC_SY450_.jpg",
+    "name": "Optical Drive",
+    "price": 19.75,
+    "min_quantity": 10,
+	"ava_quantity": 200,
+	"supply": "Adidas",
+    "description": "An optical drive is an internal or external computer disk drive that uses laser beam technology to read and write data."
+  },
+  {
+    "id": 2,
+    "img":"https://pctech.co.in/shopping/image/cache/catalog/Laptop%20Screens/DELL/dell-inspiron-5558-p51f001-hd-lcd-led-screen-500x500.jpg",
+    "name": "Display",
+    "price": 110,
+    "min_quantity": 10,
+	"ava_quantity": 80,
+	"supply": "Adidas",
+    "description": "Laptop monitors are all liquid-crystal displays (LCDs) and have two kinds of light sources – LED or CCFL."
+  },
+  {
+    "id": 3,
+    "img":"https://i5.walmartimages.com/asr/091d740f-2e2e-4694-ba61-f0def872deb5.10ef2367d30ea857cae8c0c6e4c223aa.jpeg",
+    "name": "Camera",
+    "price": 48.50,
+    "min_quantity": 10,
+	"ava_quantity": 240,
+	"supply": "Adidas",
+    "description": " A video camera that faces the user. Webcams are built into laptops but are separate units that attach to the monitor of a desktop computer."
+  },
+  {
+    "id": 4,
+    "img":"https://static-01.daraz.com.bd/p/47e37f99177bd0e082948a791dd65b95.jpg",
+    "name": "Battery",
+    "price": 60,
+    "min_quantity": 10,
+	"ava_quantity": 100,
+	"supply": "Adidas",
+    "description": "A battery is a hardware component that supplies power to a device, enabling that device to work without a power cord."
+  },
+  {
+	  "id": 5,
+    "img":"https://5.imimg.com/data5/NP/LP/NQ/SELLER-99351315/hp-pavilion-laptop-internal-speaker-500x500.jpg",
+    "name": "Speaker",
+    "price": 36.25,
+    "min_quantity": 10,
+	"ava_quantity": 300,
+	"supply": "Adidas",
+    "description": "A computer speaker is an output hardware device that connects to a computer to generate sound."
+  },
+  {
+    "id": 6,
+    "img":"https://i.ebayimg.com/images/g/8tAAAOSwTudfo1~1/s-l640.jpg",
+    "name": "Touchpad",
+    "price": 42,
+    "min_quantity": 10,
+	"ava_quantity": 60,
+	"supply": "Adidas",
+    "description": "A touch pad is a device for pointing (controlling input positioning) on a computer display screen."
+  }
+  
+  ]
