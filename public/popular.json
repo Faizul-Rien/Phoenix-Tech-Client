@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "img": "https://www.munchaza.com/images/h/adidas%20goalkeeper%20gloves-242mse.jpg",
+    "name": "Goalkeeper Gloves",
+    "price": 30,
+    "quantity": 15,
+	"supply": "Adidas",
+    "description": "Adidas gloves are worn by the some of the elite goalkeepers in World football."
+  },
+  
+  
+  {
+    "id": 2,
+    "img": "https://cdn.eazyauction.de/1f/1f1b6eb3084ec18ed51517314b294a3b710d0e17c1cf01773325c8d3ec8c5951a67224f981d2bec12df295cb2bf490f6/img/1a20327bcb95d04685a7e3c563e158ce78ff57bc.jpeg",
+    "name": "Training Kit",
+    "price": 25,
+    "quantity": 90,
+	"supply": "Adidas",
+    "description": "The collection includes adidas football training tops, track pants, shorts, tracksuits and lots more."
+  },
+  {
+    "id": 3,
+    "img": "https://cdn.mos.cms.futurecdn.net/kPWa69JMStPVrbNhuzHZsj.jpg",
+    "name": "Football Boots",
+    "price": 70,
+    "quantity": 10,
+	"supply": "Adidas",
+    "description": "Buy the newest men's adidas football boots at Football Universe. We stock the latest ranges."
+  
+  }
+]
