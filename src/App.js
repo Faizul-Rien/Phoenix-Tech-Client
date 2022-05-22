@@ -13,6 +13,8 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
+import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+import NotFound from './Pages/NotFound/NotFound';
 import PurchaseParts from './Pages/PurchaseParts/PurchaseParts';
 import Navbar from './Pages/Shared/Navbar';
 
@@ -32,6 +34,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp></SignUp>} />
         <Route path="blog" element={<Blog></Blog>} />
+        <Route path="portfolio" element={<MyPortfolio></MyPortfolio>} />
 
         <Route path="dashboard" element={<Dashboard></Dashboard>} >
         <Route index element={<MyOrders></MyOrders>}></Route>
@@ -42,6 +45,7 @@ function App() {
           <Route path="addproduct" element={<AddProduct></AddProduct>}></Route>
           <Route path="manage" element={<ManageProduct></ManageProduct>}></Route>
           </Route>
+          <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );
