@@ -1,8 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Part = ({part}) => {
-    const {name,img,price,minquantity,avaquantity,description} = part;
+    const {_id,name,img,price,minquantity,avaquantity,description} = part;
+
+    const nevigate = useNavigate();
+
+    const handlePurchase = (id) => {
+      nevigate(`/purchase/${id}`);
+    }
     return (
         <div class="card w-96 bg-base-100 shadow-xl">
         <figure><img src={img} style={{ height:'250px', width:'18rem'}} alt="parts" /></figure>
@@ -13,7 +19,7 @@ const Part = ({part}) => {
           <p>Available Quantity : {avaquantity}</p>
           <p>Description : {description}</p>
           <div class="card-actions justify-end">
-            <Link to='/purchase' class="btn btn-sm  bg-blue-400">Purchase Now</Link>
+            <button onClick={()=> handlePurchase(_id)} class="btn btn-sm  bg-blue-400">Purchase Now</button>
           </div>
         </div>
       </div>
