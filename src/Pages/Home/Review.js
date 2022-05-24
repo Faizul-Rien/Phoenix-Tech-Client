@@ -4,18 +4,16 @@ const Review = ({review}) => {
     return (
         <div className="card w-96 bg-blue-100 shadow-xl">
         <div className="card-body">
-          <div className="flex  items-center mb-3">
-          <div className="avatar">
-        <div className="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-          <img src={review.img} alt=''/>
-        </div>
-      </div>
+          <div className="flex  items-start mb-3">
               <div>
-                  <h4 className='ml-4'>{review.name}</h4>
-                  <p className='ml-4 '>{review.location}</p>
+                  <h4><span className='text-orange-600 font-bold mb-2'>Name</span> : {review.name}</h4>
+                  <p><span className='text-orange-600 font-bold mb-2'>Location</span> : {review.location}</p>
+                  <p><span className='text-orange-600 font-bold mb-2'>Rating</span> : {review.rating}</p>
+                  <p><span className='text-orange-600 font-bold '>Review</span> : {review.review}</p>
+                  
               </div>
           </div>
-          <p>{review.review}</p>
+          
         </div>
       </div>
     );

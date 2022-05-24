@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Review from './Review';
 
 const Reviews = () => {
+    const [reviews,setReviews] = useState([])
+    useEffect(()=>{
+        fetch('http://localhost:5000/review')
+        .then(res => res.json())
+        .then(data => setReviews(data))
+    },[])
 
     return (
         <div className='my-20 px-12'>
