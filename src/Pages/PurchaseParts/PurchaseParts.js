@@ -6,12 +6,13 @@ import auth from '../../firebase.init';
 
 const PurchaseParts = () => {
     const nevigate = useNavigate()
-    const [user, ] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const {purchaseId} = useParams()
     const [parts,setParts] = useState({})
 
     const handlePurchase = event => {
         event.preventDefault();
+        const quantity = event.target.value;
         nevigate('/dashboard');
         
     const purchase = {
@@ -20,7 +21,7 @@ const PurchaseParts = () => {
         price : parts.price,
         user: user.email,
         userName: user.displayName,
-        // quantity : parts.event.target.quantity.value
+        quantity,
         
     }
     fetch('http://localhost:5000/purchase', {
@@ -43,7 +44,7 @@ const PurchaseParts = () => {
         fetch(`http://localhost:5000/part/${purchaseId}`)
         .then(res=> res.json())
         .then(data => setParts(data))
-    },[])
+    },[purchaseId])
     return (
         <div class="card w-96 bg-blue-100 m-10 shadow-xl">
   <figure class="px-10 pt-10">
@@ -57,7 +58,7 @@ const PurchaseParts = () => {
     <p>Description : {parts.description}</p>
     <input type="text" name='name' disabled value={user?.displayName || ""} placeholder="Name"  class="input input-bordered input-accent w-full max-w-xs" />
     <input type="email" name='email' disabled value={user?.email || ''} placeholder="Email" class="input input-bordered input-accent w-full max-w-xs" />
-    <input type="text"  name='quantity' placeholder="Quantity" class="input input-bordered input-accent w-28 max-w-xs" />
+    <input type="text"  name='quantity'  placeholder="Quantity" class="input input-bordered input-accent w-28 max-w-xs" />
     <div class="card-actions">
       <button onClick={handlePurchase} class="btn bg-green-400">BUY NOW</button>
     </div>
