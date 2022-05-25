@@ -9,7 +9,7 @@ const MyOrders = () => {
 
     useEffect(() => {
             if(user){
-                fetch(`http://localhost:5000/purchase?user=${user.email}`)
+                fetch(`https://serene-scrubland-35114.herokuapp.com/purchase?user=${user.email}`)
                 .then(res => res.json())
                 .then(data => setorders(data));
             }

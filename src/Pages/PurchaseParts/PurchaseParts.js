@@ -24,7 +24,7 @@ const PurchaseParts = () => {
         quantity,
         
     }
-    fetch('http://localhost:5000/purchase', {
+    fetch('https://serene-scrubland-35114.herokuapp.com/purchase', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -41,7 +41,7 @@ const PurchaseParts = () => {
 }
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/part/${purchaseId}`)
+        fetch(`https://serene-scrubland-35114.herokuapp.com/part/${purchaseId}`)
         .then(res=> res.json())
         .then(data => setParts(data))
     },[purchaseId])

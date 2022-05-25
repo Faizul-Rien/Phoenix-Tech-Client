@@ -9,7 +9,7 @@ import CheckoutForm from './CheckoutForm';
 const Payment = () => {
     const stripePromise = loadStripe('pk_test_51L37HVJESUwAMyqvuzAMWWHSEALRm6FNxuEWUuBjSU5N3RnoGuekDY9zThEDT3H9h0eUR27RM2H5O8R8oUaAtwG300ZeXkVBAI');
     const {id} = useParams()
-    const url = `http://localhost:5000/purchase/${id}`;
+    const url = `https://serene-scrubland-35114.herokuapp.com/purchase/${id}`;
 
     const { data : purchase, isLoading } = useQuery(['purchase', id], () => fetch(url)
     .then(res => res.json()));

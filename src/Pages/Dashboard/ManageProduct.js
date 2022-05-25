@@ -5,7 +5,7 @@ import ManageAllProduct from './ManageAllProduct';
 
 
 const ManageProduct = () => {
-    const { data: users, isLoading,refetch} = useQuery('users', () => fetch('http://localhost:5000/part')
+    const { data: users, isLoading,refetch} = useQuery('users', () => fetch('https://serene-scrubland-35114.herokuapp.com/part')
     .then(res => res.json()));
     if (isLoading) {
         return <Loading></Loading>

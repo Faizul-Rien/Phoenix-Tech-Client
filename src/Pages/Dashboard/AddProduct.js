@@ -8,7 +8,7 @@ const AddProduct = () => {
     const onSubmit = data =>{
         console.log(data);
 
-        fetch('http://localhost:5000/part', {
+        fetch('https://serene-scrubland-35114.herokuapp.com/part', {
             method:'POST',
             headers:{
                 'content-type': 'application/json'

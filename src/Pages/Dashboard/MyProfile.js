@@ -10,7 +10,7 @@ const MyProfile = () => {
     const onSubmit = data =>{
         console.log(data);
 
-        fetch('http://localhost:5000/profile', {
+        fetch('https://serene-scrubland-35114.herokuapp.com/profile', {
             method:'POST',
             headers:{
                 'content-type': 'application/json'
