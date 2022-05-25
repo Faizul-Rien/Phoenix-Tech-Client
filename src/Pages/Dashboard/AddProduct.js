@@ -22,8 +22,8 @@ const AddProduct = () => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-control w-full max-w-xs">
+            <form className='ml-32 mt-10 rounded-lg bg-purple-100 w-2/4'  onSubmit={handleSubmit(onSubmit)}>
+            <div className="form-control ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Name</span>
         </label>
@@ -34,30 +34,63 @@ const AddProduct = () => {
             {...register("name")}
   />
     </div>
-    <div className="form-control w-full max-w-xs">
+    <div className="form-control ml-20 w-full max-w-xs">
         <label className="label">
-            <span className="label-text">Email</span>
+            <span className="label-text">Price</span>
         </label>
         <input 
-            type="email" 
-            placeholder="Your Email" 
+            type="text" 
+            placeholder="Price" 
             className="input input-bordered w-full max-w-xs"
-            {...register("email")}
+            {...register("price")}
   />
     </div>
 
-    <div className="form-control w-full max-w-xs">
+    <div className="form-control ml-20 w-full max-w-xs">
         <label className="label">
-            <span className="label-text">Password</span>
+            <span className="label-text">Minimum</span>
         </label>
         <input 
-            type="password" 
-            placeholder="Password" 
+            type="text" 
+            placeholder="Minimum Quantity" 
             className="input input-bordered w-full max-w-xs"
-            {...register("password")}
+            {...register("minimum")}
   />
     </div>
-    <input className='btn text-white font-bold  w-full max-w-xs' type="submit" value='Submit' />
+    <div className="form-control ml-20 w-full max-w-xs">
+        <label className="label">
+            <span className="label-text">Available</span>
+        </label>
+        <input 
+            type="text" 
+            placeholder="Available Quantity" 
+            className="input input-bordered w-full max-w-xs"
+            {...register("available")}
+  />
+    </div>
+    <div className="form-control ml-20 w-full max-w-xs">
+        <label className="label">
+            <span className="label-text">Description</span>
+        </label>
+        <input 
+            type="text" 
+            placeholder="Description" 
+            className="input input-bordered w-full max-w-xs"
+            {...register("description")}
+  />
+    </div>
+    <div className="form-control ml-20 w-full max-w-xs">
+        <label className="label">
+            <span className="label-text">Image</span>
+        </label>
+        <input 
+            type="text" 
+            placeholder="Photo Url" 
+            className="input input-bordered w-full max-w-xs"
+            {...register("img")}
+  />
+    </div>
+    <input className='btn ml-20 mt-5 bg-green-400 text-white font-bold  w-full max-w-xs' type="submit" value='Add Product' />
     </form>
     
         </div>

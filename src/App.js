@@ -9,6 +9,7 @@ import ManageAllOrder from './Pages/Dashboard/ManageAllOrder';
 import ManageProduct from './Pages/Dashboard/ManageProduct';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import Payment from './Pages/Dashboard/Payment';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
@@ -39,6 +40,7 @@ function App() {
 
         <Route path="dashboard" element={<Dashboard></Dashboard>} >
         <Route index element={<MyOrders></MyOrders>}></Route>
+        <Route path='payment/:id' element={<Payment></Payment>}></Route>
           <Route path="review" element={<AddReviews></AddReviews>}></Route>
           <Route path="profile" element={<MyProfile></MyProfile>}></Route>
           <Route path="allorder" element={<ManageAllOrder></ManageAllOrder>}></Route>

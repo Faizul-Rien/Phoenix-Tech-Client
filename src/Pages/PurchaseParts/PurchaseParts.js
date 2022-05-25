@@ -51,11 +51,11 @@ const PurchaseParts = () => {
     <img src={parts.img} alt="parts" class="rounded-xl" />
   </figure>
   <div class="card-body items-start text-left">
-    <h2 class="card-title">{parts.name}</h2>
-    <p>Price : ${parts.price}</p>
-    <p>Minumum Quantity : {parts.minquantity}</p>
-    <p>Available Quantity : {parts.avaquantity}</p>
-    <p>Description : {parts.description}</p>
+    <h2 class="card-title font-bold">{parts.name}</h2>
+    <p className='text-green-500 font-bold text-xl '> ${parts.price}</p>
+    <p><span className='text-orange-600 font-bold '>Minimum Quantity</span> : {parts.minquantity}</p>
+    <p><span className='text-orange-600 font-bold '>Available Quantity</span> : {parts.avaquantity}</p>
+    <p><span className='text-orange-600 font-bold '>Description</span> : <span className='text-sm'>{parts.description}</span></p>
     <input type="text" name='name' disabled value={user?.displayName || ""} placeholder="Name"  class="input input-bordered input-accent w-full max-w-xs" />
     <input type="email" name='email' disabled value={user?.email || ''} placeholder="Email" class="input input-bordered input-accent w-full max-w-xs" />
     <input type="text"  name='quantity'  placeholder="Quantity" class="input input-bordered input-accent w-28 max-w-xs" />

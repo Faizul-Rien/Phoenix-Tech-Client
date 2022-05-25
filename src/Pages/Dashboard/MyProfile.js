@@ -11,7 +11,7 @@ const MyProfile = () =>{
     const onSubmit = data =>{
         console.log(data);
 
-        fetch('http://localhost:5000/profile', {
+        fetch(`http://localhost:5000/profile`, {
             method:'POST',
             headers:{
                 'content-type': 'application/json'
@@ -43,7 +43,6 @@ const MyProfile = () =>{
         </label>
         <input 
             type="email" 
-            disabled value={user?.email || ''}
             placeholder="Your Email" 
             className="input input-bordered w-full max-w-xs"
             {...register("email")}
