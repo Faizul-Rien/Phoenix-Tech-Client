@@ -12,9 +12,9 @@ const MakeAdmin = () => {
     }
     return (
         <div>
-            <h2 className='text-3xl text-center font-bold text-purple-600 m-8'>ALL USER</h2>
+            <h2 className='text-3xl text-center font-bold text-purple-600 lg:m-8'>ALL USER</h2>
             <div class="overflow-x-auto">
-                <table class="table w-3/4 ml-28">
+                <table class="table lg:w-3/4 lg:ml-28">
                     <thead>
                         <tr>
                             <th></th>

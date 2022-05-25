@@ -5,22 +5,20 @@ import ManageAlluser from './ManageAlluser';
 
 
 const ManageAllOrder = () => {
-    const { data: users, isLoading,refetch} = useQuery('users', () => fetch('http://localhost:5000/purchse')
+    const { data: users, isLoading,refetch} = useQuery('users', () => fetch('http://localhost:5000/user')
     .then(res => res.json()));
     if (isLoading) {
         return <Loading></Loading>
     }
     return (
         <div>
-            <h2 className="text-2xl">All Users: {users.length}</h2>
+            <h2 className="text-2xl my-5 lg:ml-28 font-bold text-orange-400">All Users</h2>
             <div class="overflow-x-auto">
-                <table class="table w-full">
+                <table class="table lg:ml-28 lg:w-7/12">
                     <thead>
                         <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>Email</th>
+                            <th>Role</th>
                         </tr>
                     </thead>
                     <tbody>

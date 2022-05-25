@@ -46,8 +46,8 @@ const PurchaseParts = () => {
         .then(data => setParts(data))
     },[purchaseId])
     return (
-        <div class="card w-96 bg-blue-100 m-10 shadow-xl">
-  <figure class="px-10 pt-10">
+        <div class="card w-96 bg-blue-100 lg:m-10 shadow-xl">
+  <figure class="lg:px-10 lg:pt-10">
     <img src={parts.img} alt="parts" class="rounded-xl" />
   </figure>
   <div class="card-body items-start text-left">

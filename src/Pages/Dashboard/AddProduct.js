@@ -22,8 +22,9 @@ const AddProduct = () => {
     }
     return (
         <div>
-            <form className='ml-32 mt-10 rounded-lg bg-purple-100 w-2/4'  onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-control ml-20 w-full max-w-xs">
+            <h2 className='lg:ml-32 mt-5 text-2xl font-bold text-orange-400'>Add a new Product here</h2>
+            <form className='lg:ml-32 mt-10 rounded-lg bg-purple-100 lg:w-2/4'  onSubmit={handleSubmit(onSubmit)}>
+            <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Name</span>
         </label>
@@ -34,7 +35,7 @@ const AddProduct = () => {
             {...register("name")}
   />
     </div>
-    <div className="form-control ml-20 w-full max-w-xs">
+    <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Price</span>
         </label>
@@ -46,7 +47,7 @@ const AddProduct = () => {
   />
     </div>
 
-    <div className="form-control ml-20 w-full max-w-xs">
+    <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Minimum</span>
         </label>
@@ -57,7 +58,7 @@ const AddProduct = () => {
             {...register("minimum")}
   />
     </div>
-    <div className="form-control ml-20 w-full max-w-xs">
+    <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Available</span>
         </label>
@@ -68,7 +69,7 @@ const AddProduct = () => {
             {...register("available")}
   />
     </div>
-    <div className="form-control ml-20 w-full max-w-xs">
+    <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Description</span>
         </label>
@@ -79,7 +80,7 @@ const AddProduct = () => {
             {...register("description")}
   />
     </div>
-    <div className="form-control ml-20 w-full max-w-xs">
+    <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Image</span>
         </label>
@@ -90,7 +91,7 @@ const AddProduct = () => {
             {...register("img")}
   />
     </div>
-    <input className='btn ml-20 mt-5 bg-green-400 text-white font-bold  w-full max-w-xs' type="submit" value='Add Product' />
+    <input className='btn lg:ml-20 mt-5 bg-green-400 text-white font-bold  w-full max-w-xs' type="submit" value='Add Product' />
     </form>
     
         </div>

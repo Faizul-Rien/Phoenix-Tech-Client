@@ -10,7 +10,7 @@ const Part = ({part}) => {
       nevigate(`/purchase/${id}`);
     }
     return (
-        <div class="card w-80 bg-blue-100 mb-10 shadow-xl">
+        <div class="card lg:w-80 bg-blue-100 mb-10 shadow-xl">
         <figure><img className='mt-5 rounded-lg' src={img} style={{ height:'250px', width:'18rem'}} alt="parts" /></figure>
         <div class="card-body">
           <h2 class="card-title font-bold">{name}</h2>

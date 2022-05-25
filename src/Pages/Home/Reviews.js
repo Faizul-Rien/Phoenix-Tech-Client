@@ -10,7 +10,7 @@ const Reviews = () => {
     },[])
 
     return (
-        <div className='my-20 px-12'>
+        <div className='my-20 lg:px-20'>
                 <div>
                 <h2 className='text-3xl text-center text-green-300 font-bold'>What Our Customers Says</h2>
                 </div>

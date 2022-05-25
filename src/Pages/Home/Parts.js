@@ -10,7 +10,7 @@ const Parts = () => {
     },[])
    
     return (
-        <div className='mb-28'>
+        <div className='mb-28 lg:mx-8'>
             <div>
             <h2 className='text-3xl text-green-300 text-center font-bold mb-5'>Laptop Selling Parts</h2>
             </div>

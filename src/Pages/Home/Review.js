@@ -2,7 +2,7 @@ import React from 'react';
 
 const Review = ({review}) => {
     return (
-        <div className="card w-96 bg-blue-100 shadow-xl">
+        <div className="card lg:w-80 bg-blue-100 shadow-xl">
         <div className="card-body">
           <div className="flex  items-start mb-3">
               <div>

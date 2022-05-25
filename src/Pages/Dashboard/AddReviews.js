@@ -22,8 +22,9 @@ const AddReviews = () => {
     }
     return (
         <div>
-            <form className='ml-32 mt-10 rounded-lg bg-purple-100 w-2/4'  onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-control ml-20 w-full max-w-xs">
+            <h2 className='lg:ml-32 mt-5 text-2xl font-bold text-orange-400'>Give us your most precious review</h2>
+            <form className='lg:ml-32  lg:mt-10 rounded-lg bg-purple-100  lg:w-2/4'  onSubmit={handleSubmit(onSubmit)}>
+            <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Name</span>
         </label>
@@ -34,7 +35,7 @@ const AddReviews = () => {
             {...register("name")}
   />
     </div>
-    <div className="form-control ml-20 w-full max-w-xs">
+    <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Location</span>
         </label>
@@ -46,7 +47,7 @@ const AddReviews = () => {
   />
     </div>
 
-    <div className="form-control ml-20 w-full max-w-xs">
+    <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Rating</span>
         </label>
@@ -57,7 +58,7 @@ const AddReviews = () => {
             {...register("rating")}
   />
     </div>
-    <div className="form-control ml-20 w-full max-w-xs">
+    <div className="form-control lg:ml-20 w-full max-w-xs">
         <label className="label">
             <span className="label-text">Review</span>
         </label>
@@ -68,7 +69,7 @@ const AddReviews = () => {
             {...register("review")}
   />
     </div>
-    <input className='btn ml-20 mt-5 bg-green-400 text-white font-bold  w-full max-w-xs' type="submit" value='Add Review' />
+    <input className='btn lg:ml-20 mt-5 mb-5 bg-green-400 text-white font-bold  w-full max-w-xs' type="submit" value='Add Review' />
     </form>
     
         </div>
