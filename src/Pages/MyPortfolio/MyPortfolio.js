@@ -81,6 +81,25 @@ const MyPortfolio = () => {
     
   </div>
 </div>
+        <div className='lg:my-10 lg:ml-28 rounded-lg bg-gray-200 lg:w-60 p-4 '>
+            <h2 class="card-title mb-2 font-bold text-orange-400">Projects Live-site link</h2>
+
+           <div>
+           <button class="btn  bg-blue-400 gap-2  mb-3 "><a target="_blank" href="https://react-router-car-website.netlify.app/home">Car Website</a></button>
+           </div>
+            
+           <div>
+           <button class="btn  bg-blue-400 gap-2 mb-3"><a target="_blank" href="https://football-universe.netlify.app/home">Football Universe</a></button>
+           </div>
+            
+          <div>
+          <button class="btn  bg-blue-400 gap-2"><a target="_blank" href="https://photo-diary-de23a.firebaseapp.com/">Photo Diary</a></button>
+          </div>
+            
+       
+
+        </div>
+
         </div>
     );
 };
